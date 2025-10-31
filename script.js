@@ -4,11 +4,12 @@ function myfunction() {
     document.getElementById("buttoncontent").innerHTML=a*a
 }
 
-<script>
+
     function validateForm() {
     const email = document.getElementById('email').value;
-    const pass = document.getElementById('password').value;
+    const pass = document.getElementById('Password').value;
     const age = document.getElementById('age').value;
+    const address = document.getElementById('address').value;
     const msgBox = document.getElementById('message');
 
     let message = '';
@@ -17,7 +18,7 @@ function myfunction() {
         message = 'Enter an email.';
     msgBox.style.color = 'red';
       } else if (pass === '') {
-        message = 'Enter a password.';
+        message = 'Enter a Password.';
     msgBox.style.color = 'red';
       } else if (age === '') {
         message = 'Enter your age.';
@@ -29,4 +30,3 @@ function myfunction() {
 
     msgBox.innerText = message;
     }
-</script>
